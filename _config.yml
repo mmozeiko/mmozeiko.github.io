@@ -1,0 +1,19 @@
+theme: minima
+
+title: Martins Mozeiko
+author: Martins Mozeiko
+description: Martins Mozeiko
+email: martins.mozeiko@gmail.com
+
+twitter_username: mmozeiko
+github_username:  mmozeiko
+rss: rss
+
+show_excerpts: true
+
+paginate: 10
+paginate_path: "/page/:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed

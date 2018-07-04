@@ -1,0 +1,34 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+
+        {%- if site.rss -%}
+        <a href="{{ 'feed.xml' | relative_url }}">
+          <svg class="svg-icon" viewBox="0 0 60 60"><use xlink:href="{{ '/assets/icons.svg#rss' | relative_url }}"></use></svg>
+        </a>
+        {%- endif -%}
+
+        {%- if site.email -%}
+        <a href="mailto:{{ site.email }}">
+          <svg class="svg-icon" viewBox="0 0 60 60"><use xlink:href="{{ '/assets/icons.svg#email' | relative_url }}"></use></svg>
+        </a>
+        {%- endif -%}
+
+        {%- if site.github_username -%}
+        <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank">
+          <svg class="svg-icon" viewBox="0 0 60 60"><use xlink:href="{{ '/assets/icons.svg#github' | relative_url }}"></use></svg>
+        </a>
+        {%- endif -%}
+
+        {%- if site.twitter_username -%}
+        <a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" target="_blank">
+          <svg class="svg-icon" viewBox="0 0 60 60"><use xlink:href="{{ '/assets/icons.svg#twitter' | relative_url }}"></use></svg>
+        </a>
+        {%- endif -%}
+
+      </div>
+    </div>
+  </div>
+</footer>

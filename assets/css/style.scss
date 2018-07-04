@@ -1,0 +1,49 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.site-header {
+  border-top: 0;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+.site-footer a:hover {
+  text-decoration: none;
+}
+
+.site-footer {
+  padding-top: $spacing-unit * 0.25;
+}
+
+.post-list h1, .post-header {
+  margin-bottom: 0;
+}
+
+.svg-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.svg-icon:hover {
+  fill: #000;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.newer-posts {
+  display: inline!important;
+  float: left;
+}
+
+.older-posts {
+  display: inline!important;
+  float: right;
+}
+
+.page-count {
+  display: inline-block;
+  min-width: 100px;
+}
